@@ -1,0 +1,70 @@
+nav.navbar.navbar-toggleable-md,
+.collapse.navbar-collapse {
+    align-content: center;
+    align-items: center;
+}
+
+.collapse.navbar-collapse {
+    margin: 1rem 0;
+    a {
+        color: @black;
+        .text-uppercase;
+        .bold;
+        font-size: 0.9rem;
+    }
+    ul.navbar-nav {
+        margin-left: 2rem;
+        .nav-item {
+            a {
+                color: @black;
+            }
+        }
+    }
+    form.form-inline {
+        button {
+            background: #fff;
+            outline: none;
+            border: none;
+        }
+        input {
+            border: none;
+            box-shadow: none !important;
+            border-radius: 0;
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: 1px solid @black;
+            }
+        }
+    }
+    .navbar__login-container {
+        margin-left: 3rem;
+        margin-right: 1rem;
+        border-radius: 25px;
+        padding: 0;
+        .shadow;
+        a {
+            padding: 10px 25px !important;
+            text-decoration: none;
+            .transition;
+            
+        }
+        a.sign-in {
+            background: #fff;
+            border-radius: 25px 0 0 25px;
+            &:hover{
+                color: #fff;
+                background: @orange;
+            }
+        }
+        a.sign-up {
+            background: @orange;
+            border-radius: 0 25px 25px 0;
+            color: #fff;
+            &:hover{
+                color: @black;
+                background: #fff;
+            }
+        }
+    }
+}
