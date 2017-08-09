@@ -1,1 +1,19 @@
-//- navigation for site
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarTogglerDemo01.collapse.navbar-collapse
+    a.navbar-brand(href='#')
+        img.logo(src="img/logo.png", alt="Shop")
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Explore
+      li.nav-item
+        a.nav-link(href='#') Publisher plans
+    form.form-inline.my-2.my-lg-0
+      button.btn.btn-outline-success.my-2.my-sm-0(type='submit')
+        i.fa.fa-search
+      input.form-control.mr-sm-2(type='text', placeholder='Search for your issue...')
+    .navbar__login-container
+        a.sign-in(href="#") Sign In
+        a.sign-up(href="#") Sign up
