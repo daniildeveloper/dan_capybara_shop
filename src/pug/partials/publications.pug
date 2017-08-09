@@ -1,0 +1,21 @@
+//- publications
+.publications__wrapper
+    //- publications__heading
+    .publications__heading.text-center
+        p.h2 15,000+ Publications uploaded daily.
+        p From mainstream to the obscure.
+        a.text-uppercase(href="#") go explore and see yourself.
+    //-  end publications__heading
+
+    //- publications itself
+    .publications.container
+        .row
+            each val in [1, 2, 3]
+                //- publication
+                .col-md-4.publication
+                    img(src="img/uploaded-" + val + ".png", alt="").img-responsive
+                    .publication__description
+                        h4.text-uppercase Jacada travel
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur fuga illo nobis
+                //- end publication
+    //- end publications
